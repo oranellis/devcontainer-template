@@ -1,0 +1,13 @@
+{
+  "name": "CLI Devcontainer",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "remoteUser": "dev",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/app,type=bind"
+  ],
+  "workspaceFolder": "/app",
+  "postCreateCommand": ""
+}
